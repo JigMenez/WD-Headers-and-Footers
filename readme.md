@@ -9,18 +9,18 @@
     <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Headers and Footers</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Hello. My name is Justin Ivan Gabriel E. Menez. Here is a project for the headers and footers examples and how it is showcased here.
 </div>
 
 <br />
 
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
+![](https://visit-counter.vercel.app/counter.png?page=JigMenez/WD-Headers-and-Footers)
 
 ---
 
@@ -60,17 +60,45 @@
 Description of the project in details.
 
 Guiding Question:
-- What is the project
+- What is the project:
+  - This project displays different header and footer styles to show static designs and CSS animations.
 - Whats the purpose
-- What are key components
-- What technology used and how it is used
+  - The purpose is to provide examples of various header and footer designs for educational and reference purposes in web development.
+- What are key components:
+  - The project is structured into a landing page, a header gallery, and a footer gallery, each demonstrating different styles.
+- What technology used and how it is used:
+  - **HTML**: For structuring the web pages.
+  - **CSS**: For styling the elements, including static styles and animations.
+  - **JavaScript**: Placeholder for any future interactive features.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+**Landing Page** (`index.html`):
+  - Contains a title, subtitle, description, and navigation buttons to the header and footer galleries.
+
+- **Header Gallery Page** (`pages/header-gallery/index.html`):
+  - Showcases various static and animated header styles using different background colors, fonts, and animations.
+
+- **Footer Gallery Page** (`pages/footer-gallery/index.html`):
+  - Displays various static and animated footer styles with similar variations in background colors, fonts, and animations.
+
+- **CSS Styles** (`assets/css/style.css`):
+  - **General Styles**: Basic styles for body, background images, and common elements.
+  - **Header Styles**:
+    - Static header styles with different background colors and fonts.
+    - Animated header styles using CSS keyframe animations.
+  - **Footer Styles**:
+    - Static footer styles with different background colors and fonts.
+    - Animated footer styles with CSS keyframe animations.
+
+- **Navigation**:
+  - Links for navigating between the landing page, header gallery, and footer gallery.
+  - Back buttons on gallery pages to return to the landing page.
+
+- **Assets**:
+  - **Images** (`assets/img`): Background images for different pages.
+  - **JavaScript** (`assets/js/script.js`): Placeholder for any JavaScript functionality, though not specifically utilized in the provided code.
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +145,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Headers and Footers | The purpose is to provide examples of various header and footer designs for educational and reference purposes in web development. | [trykolang.com](https://jigmenez.github.io/WD-Headers-and-Footers/) |
