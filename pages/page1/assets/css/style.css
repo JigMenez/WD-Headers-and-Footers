@@ -1,13 +1,7 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.indexbackground {
-    background-image: url(INDEX.png);
-    background-size: cover;
 }
 
 .headerbackground {
@@ -15,28 +9,8 @@ body {
     background-size: cover;
 }
 
-.landing-page {
-    text-align: center;
-    padding: 50px;
-}
-
-.footerbackground {
-    background-image: url(FOOTER.png);
-    background-size: cover;
-}
-
 .White {
     color: #ddd;
-}
-
-.buttons .button {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #13ff76;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .back-button {
@@ -49,81 +23,66 @@ body {
     border-radius: 5px;
 }
 
-section {
+header, section {
     padding: 20px;
     text-align: center;
 }
 
-.header, .footer {
+.header {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
 }
 
 /* Static Header Styles */
 .header1 {
-    background-color: #4caf84;
-    color: white;
+    background: linear-gradient(45deg, #4caf84, #a5d6a7);
     font-family: "Times New Roman", Times, serif;
 }
 
 .header2 {
-    background-color: #f44336;
-    color: rgb(255, 244, 176);
+    background: linear-gradient(45deg, #f44336, #e57373);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header3 {
-    background-color: #2196F3;
-    color: rgb(71, 63, 63);
+    background: linear-gradient(45deg, #2196F3, #64b5f6);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .header4 {
-    background-color: #ffeb3b;
+    background: linear-gradient(45deg, #ffeb3b, #fff176);
     color: black;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .header5 {
-    background-color: #9c27b0;
-    color: rgb(166, 238, 170);
+    background: linear-gradient(45deg, #9c27b0, #ce93d8);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-/* Static Footer Styles */
-.footer1 {
-    background-color: #4caf84;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
+/* Button Styles */
+.button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #13ff76;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
 
-.footer2 {
-    background-color: #f44336;
-    color: rgb(174, 232, 255);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Button Hover Animations */
 
-.footer3 {
-    background-color: #2196F3;
-    color: rgb(255, 184, 251);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
 
-.footer4 {
-    background-color: #bfb02e;
-    color: rgb(255, 255, 255);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.footer5 {
-    background-color: #9c27b0;
-    color: rgb(252, 255, 165);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-/* Animated Header Styles */
-@keyframes slideIn {
+/* Unique Button Animations by Animated Headers */
+@keyframes slideInButton {
     from {
         transform: translateX(-100%);
     }
@@ -132,156 +91,88 @@ section {
     }
 }
 
+.animated-header1 .button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-header2 .button:hover {
+    background-color: #e57373;
+    transform: rotate(10deg);
+}
+
+@keyframes growButton {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.animated-header3 .button:hover {
+    background-color: #64b5f6;
+    transform: translateY(-10px);
+}
+
+@keyframes rotateInButton {
+    from {
+        transform: rotate(-360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.animated-header4 .button:hover {
+    background-color: #fff176;
+    transform: translateX(10px);
+}
+
+@keyframes bounceInButton {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.animated-header5 .button:hover {
+    background-color: #ce93d8;
+    transform: scale(1.2);
+}
+
+/* Animated Headers */
 .animated-header1 {
-    background-color: #27e1d8;
-    color: rgb(0, 0, 0);
-    animation: slideIn 1s ease-in-out;
+    background: linear-gradient(45deg, #27e1d8, #80deea);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .animated-header2 {
-    background-color: #ffa013;
-    color: white;
-    animation: fadeIn 1s ease-in-out;
+    background: linear-gradient(45deg, #ffa013, #ffcc80);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-@keyframes grow {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
 .animated-header3 {
-    background-color: #3227ac;
-    color: rgb(255, 170, 170);
-    animation: grow 1s ease-in-out;
+    background: linear-gradient(45deg, #3227ac, #7986cb);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@keyframes rotateIn {
-    from {
-        transform: rotate(-360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
 .animated-header4 {
-    background-color: #9c8c00;
-    color: rgb(255, 255, 255);
-    animation: rotateIn 1s ease-in-out;
+    background: linear-gradient(45deg, #9c8c00, #ffeb3b);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@keyframes bounceIn {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
 .animated-header5 {
-    background-color: #9f1140;
-    color: rgb(191, 255, 209);
-    animation: bounceIn 1s ease-in-out;
+    background: linear-gradient(45deg, #9f1140, #ec407a);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-/* Animated Footer Styles */
-@keyframes slideInFooter {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.animated-footer1 {
-    background-color: #3beed7;
-    color: rgb(0, 0, 0);
-    animation: slideInFooter 1s ease-in-out;
-    font-family: fantasy;
-}
-
-@keyframes fadeInFooter {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.animated-footer2 {
-    background-color: #df9114;
-    color: white;
-    animation: fadeInFooter 1s ease-in-out;
-    font-family: sans-serif;
-}
-
-@keyframes growFooter {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-.animated-footer3 {
-    background-color: #1e108b;
-    color: white;
-    animation: growFooter 1s ease-in-out;
-    font-family: cursive;
-}
-
-@keyframes rotateInFooter {
-    from {
-        transform: rotate(-360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-.animated-footer4 {
-    background-color: #a2770a;
-    color: rgb(255, 167, 167);
-    animation: rotateInFooter 1s ease-in-out;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-@keyframes bounceInFooter {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-.animated-footer5 {
-    background-color: #61041e;
-    color: rgb(255, 168, 216);
-    animation: bounceInFooter 1s ease-in-out;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
