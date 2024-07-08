@@ -145,4 +145,4 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Headers and Footers | The purpose is to provide examples of various header and footer designs for educational and reference purposes in web development. | [trykolang.com](https://jigmenez.github.io/WD-Headers-and-Footers/) |
+| Headers and Footers | The purpose is to provide examples of various header and footer designs for educational and reference purposes in web development. | [jigmenez.com](https://jigmenez.github.io/WD-Headers-and-Footers/index.html) |
