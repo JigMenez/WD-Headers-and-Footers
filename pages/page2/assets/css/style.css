@@ -1,16 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
     margin: 0;
-    padding: 0;
-}
-
-.footerbackground {
-    background-image: url(FOOTER.png);
-    background-size: cover;
-}
-
-.White {
-    color: #ddd;
+    font-family: Arial, sans-serif;
 }
 
 .back-button {
@@ -23,201 +15,165 @@ body {
     border-radius: 5px;
 }
 
-section {
+.footer-section {
+    padding: 20px 0;
+}
+
+#footer1 {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#footer2 {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#footer3 {
+    background-color: #cccccc;
+    color: #333;
+}
+
+#footer4 {
+    background-color: #b3b3b3;
+    color: #333;
+}
+
+#footer5 {
+    background-color: #999999;
+    color: #333;
+}
+
+#footer6 {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+#footer7 {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+#footer8 {
+    background-color: #cccccc;
+    color: #333;
+}
+
+#footer9 {
+    background-color: #b3b3b3;
+    color: #333;
+}
+
+#footer10 {
+    background-color: #999999;
+    color: #333;
+}
+
+footer {
     padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.footer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    color: white;
+.footer-content-left {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0 20px;
 }
 
-/* Static Footer Styles */
-.footer1 {
-    background: linear-gradient(45deg, #4caf84, #a5d6a7);
-    font-family: "Times New Roman", Times, serif;
+.footer-content-right {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 0 20px;
 }
 
-.footer2 {
-    background: linear-gradient(45deg, #f44336, #e57373);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.footer-content p {
+    margin: 10px 0;
 }
 
-.footer3 {
-    background: linear-gradient(45deg, #2196F3, #64b5f6);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.footer-content a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
 }
 
-.footer4 {
-    background: linear-gradient(45deg, #bfb02e, #fff176);
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* Unique Hover Animations */
+
+/* Footer 5 and Footer 10 (Right-Aligned) */
+.footer-content-right a {
+    transition: color 0.3s ease;
 }
 
-.footer5 {
-    background: linear-gradient(45deg, #9c27b0, #ce93d8);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.footer-content-right a:hover {
+    color: #666;
 }
 
-/* Button Styles */
-.button-group {
+/* Footer 6 and Footer 10 (Hover Animation on Privacy Policy and Terms of Service) */
+#footer6 a, #footer10 a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#footer6 a:hover, #footer10 a:hover {
+    color: #ff6347; /* Tomato */
+    text-decoration: underline;
+}
+
+/* Footer 7 (Social Media Only Hover) */
+#footer7 .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+#footer7 .social-icons a:hover {
+    transform: translateY(-3px);
+}
+
+/* Footer 9 (Subscribe Button Hover) */
+#footer9 form {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
-.button {
-    margin: 5px;
-    padding: 10px 20px;
-    background-color: #13ff76;
-    color: rgb(0, 0, 0);
-    border: none;
-    border-radius: 5px;
+#footer9 input[type="email"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#footer9 button {
+    padding: 5px 10px;
+    font-size: 16px;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-/* Unique Button Hover Animations */
-.hover-animation {
-    transition: transform 0.3s ease-in-out;
+#footer9 button:hover {
+    transform: scale(1.1);
+    background-color: #666;
 }
 
-.animated-footer1 .button.hover-animation:hover {
-    transform: rotate(360deg);
+/* Footer 8 Column Styling */
+#footer8 .footer-column {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.animated-footer2 .button.hover-animation:hover {
-    transform: scale(1.2);
-}
 
-.animated-footer3 .button.hover-animation:hover {
-    transform: translateY(-10px);
-}
-
-.animated-footer4 .button.hover-animation:hover {
-    transform: skewX(10deg);
-}
-
-.animated-footer5 .button.hover-animation:hover {
-    transform: translateY(-10px) rotate(360deg);
-}
-
-/* Animated Footer Styles */
-@keyframes slideInFooter {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-.animated-footer1 {
-    background: linear-gradient(45deg, #3beed7, #80deea);
-    font-family: fantasy;
-    animation: slideInFooter 1s ease-in-out;
-}
-
-@keyframes fadeInFooter {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.animated-footer2 {
-    background: linear-gradient(45deg, #df9114, #ffcc80);
-    font-family: sans-serif;
-    animation: fadeInFooter 1s ease-in-out;
-}
-
-@keyframes growFooter {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-.animated-footer3 {
-    background: linear-gradient(45deg, #1e108b, #7986cb);
-    font-family: cursive;
-    animation: growFooter 1s ease-in-out;
-}
-
-@keyframes rotateInFooter {
-    from {
-        transform: rotate(-360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-.animated-footer4 {
-    background: linear-gradient(45deg, #a2770a, #ffeb3b);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    animation: rotateInFooter 1s ease-in-out;
-}
-
-@keyframes bounceInFooter {
-    from {
-        transform: translateY(-100%);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-.animated-footer5 {
-    background: linear-gradient(45deg, #61041e, #ec407a);
-    font-family: Arial, Helvetica, sans-serif;
-    animation: bounceInFooter 1s ease-in-out;
-}
-
-/* Unique Button Animation Styles */
-@keyframes rotateButton {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.2);
-    }
-}
-
-@keyframes translateYButton {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-10px);
-    }
-}
-
-@keyframes skewXButton {
-    from {
-        transform: skewX(0deg);
-    }
-    to {
-        transform: skewX(10deg);
-    }
+#footer3 .footer-column {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
 }

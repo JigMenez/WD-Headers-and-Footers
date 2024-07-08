@@ -48,22 +48,83 @@ header, section {
 .header2 {
     background: linear-gradient(45deg, #f44336, #e57373);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .header3 {
     background: linear-gradient(45deg, #2196F3, #64b5f6);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header3 h2 {
+    margin-bottom: 10px;
+}
+
+.header3 .button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header3 .button {
+    margin: 5px;
 }
 
 .header4 {
     background: linear-gradient(45deg, #ffeb3b, #fff176);
     color: black;
     font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header4 h2 {
+    margin-bottom: 10px;
+}
+
+.header4 .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header4 .button {
+    margin: 5px;
 }
 
 .header5 {
     background: linear-gradient(45deg, #9c27b0, #ce93d8);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header5 .left-container {
+    display: flex;
+    align-items: center;
+}
+
+.header5 .left-container h2 {
+    margin-right: 10px;
+}
+
+.header5 .button {
+    margin: 5px;
+}
+
+.header5 .search-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #9c27b0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 /* Button Styles */
@@ -77,9 +138,6 @@ header, section {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-
-/* Button Hover Animations */
-
 
 /* Unique Button Animations by Animated Headers */
 @keyframes slideInButton {
@@ -160,19 +218,80 @@ header, section {
 .animated-header2 {
     background: linear-gradient(45deg, #ffa013, #ffcc80);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .animated-header3 {
     background: linear-gradient(45deg, #3227ac, #7986cb);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.animated-header3 h2 {
+    margin-bottom: 10px;
+}
+
+.animated-header3 .button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.animated-header3 .button {
+    margin: 5px;
 }
 
 .animated-header4 {
     background: linear-gradient(45deg, #9c8c00, #ffeb3b);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.animated-header4 h2 {
+    margin-bottom: 10px;
+}
+
+.animated-header4 .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.animated-header4 .button {
+    margin: 5px;
 }
 
 .animated-header5 {
     background: linear-gradient(45deg, #9f1140, #ec407a);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.animated-header5 .left-container {
+    display: flex;
+    align-items: center;
+}
+
+.animated-header5 .left-container h2 {
+    margin-right: 10px;
+}
+
+.animated-header5 .button {
+    margin: 5px;
+}
+
+.animated-header5 .search-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #9f1140;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
